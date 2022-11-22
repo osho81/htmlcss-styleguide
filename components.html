@@ -13,12 +13,7 @@
 </head>
 
 <body>
-    <!-- buttons: standard, function, pos, neg
-
-tables: https://www.w3schools.com/howto/howto_css_table_center.asp
-
-navigation (and refer to the styleguides own example)
-
+    <!-- 
 messages/warnings 
 
 loadspinner
@@ -31,45 +26,250 @@ forms: labels, input, selection
 
 
 
- <h3 id="corner-title">Wigell Styleguide <i class="fa-solid fa-pen-clip"></i></h3>
+    <h3 id="corner-title">Wigell Styleguide <i class="fa-solid fa-pen-clip"></i></h3>
 
     <section id="main-content">
 
-         <!-- Navbar with html/css, without js for the purpose of this project -->
-        <div class="main-menu semibold-weight">
+        <!-- Navbar with html/css, without js for the purpose of this project -->
+        <div class="main-menu semibold-weight borders-general">
             <a href="./index.html">Home</a>
             <a href="./general.html">General design</a>
             <a href="./components.html">Components</a>
             <div class="subnav small-text emphasized">
-                <a href="#headings-div">SOON</a>
-                <a href="#text-design-div">SOON</a>
+                <a href="#buttons-div">Button styles</a>
+                <a href="#tables-div">Tables</a>
+                <a href="#navigation-div">Navigation</a>
+                <a href="#information-div">Information</a>
             </div>
         </div>
 
         <div class="topics" id="intro-component-div">
-            <H1>Component guides for recurrent elements </H1>
-            <p>This guideline shall be used for all the following components (html elements, css stylings etc.)</p><br>
-        </div>
-
-        <hr>
-
-        <div class="topics" id="loadpinner-div">
-            <H3>Loadpinner styles</H3>
-            <p>The following loadpinner styles shall be followed</p><br>
-
-            
+            <h1>Component guides for recurrent elements </h1>
+            <p>This guideline shall be used for all the following components. A components is normally composed of an
+                html element and css styling.</p>
         </div>
 
         <hr>
 
         <div class="topics" id="buttons-div">
-            <H3>Buttons styles</H3>
+            <h2>Button styles</h2>
             <p>The following button styles shall be adhered to</p><br>
-    
-            <!-- Give the examples -->
+
+            <h3>Standard buttons</h3>
+            <p> Use any of these buttons in all cases, except for when the special buttons should be used. The button
+                text exemplifies typiccal usage of a standard button. Width follows text-width, If
+                needs to fix width, align with positive buttons width.</p>
+
+            <button class="standard-btn">Previous</button>
+            <button class="standard-btn">Next</button>
+            <button class="standard-btn">Down</button>
+
+            <br><br>
+
+            <h3>Functional buttons</h3>
+            <p> Use any of these for specific actions, e.g. download or print out. These buttons should have a pertinent
+                icon.</p>
+
+            <button class="functional-btn"><i class="fa-solid fa-download"></i> Download</button>
+            <button class="functional-btn"><i class="fa-solid fa-print"></i> Print</button>
+
+            <br><br>
+
+            <h3>Positive buttons</h3>
+            <p> Use any of these buttons for postive choices, such as the following examples.</p>
+
+            <button class="positive-btn">OK</button>
+            <button class="positive-btn">Accept</button>
+            <button class="positive-btn">Create</button>
+            <button class="positive-btn">Save</button>
+
+            <br><br>
+
+            <h3>Negative buttons</h3>
+            <p> Use any of these buttons for negative choices, such as the following examples.</p>
+
+            <button class="negative-btn">Cancel</button>
+            <button class="negative-btn">Delete</button>
+            <button class="negative-btn">Decline</button>
+            <button class="negative-btn">No</button>
+        </div>
+
+        <hr>
+
+        <div class="topics" id="tables-div">
+            <h2>Tables</h2>
+            <p>Select the appropriate table depending on the number of columns needed. Always follow these general table
+                rules</p>
+            <ul>
+                <li>Select short, precise and concise table headers</li>
+                <li>Text in cells should be aligned to the left</li>
+                <li>Numbers in cells should be aligned to the right</li>
+            </ul><br>
+
+
+            <h3>Table with multiple columns</h3>
+            <p>When table rows/objects have several or many columns/values, use this broader table. Additional columns
+                can be added with additional html th-elements (table headers).
+            </p>
+
+            <table class="multiple-col-table">
+                <tr>
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>SSN</th>
+                    <th class="right-aligned-cell">Age</th>
+                    <th>Email</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Donald</td>
+                    <td>Trump</td>
+                    <td>123456789</td>
+                    <td class="right-aligned-cell">78</td>
+                    <td>donald@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Joe</td>
+                    <td>Biden</td>
+                    <td>987654321</td>
+                    <td class="right-aligned-cell">80</td>
+                    <td>joe@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Michael</td>
+                    <td>Jackson</td>
+                    <td>789123456</td>
+                    <td class="right-aligned-cell">64</td>
+                    <td>michael@gmail.com</td>
+                </tr>
+            </table>
+
+            <br><br>
+
+            <h3>Table with few columns</h3>
+            <p>When table columns/values are few, less than 3, use this longer table. Such tables usually have many
+                rows/objects, and corresponds to a list.
+            </p>
+
+            <table class="few-col-table">
+                <tr>
+                    <th>City</th>
+                    <th class="right-aligned-cell">Tourists/year</th>
+                </tr>
+                <tr>
+                    <td>Cairo</td>
+                    <td class="right-aligned-cell">5 761 000</td>
+                </tr>
+                <tr>
+                    <td>London</td>
+                    <td class="right-aligned-cell">9 857 000</td>
+                </tr>
+                <tr>
+                    <td>New York</td>
+                    <td class="right-aligned-cell">12 550 000</td>
+                </tr>
+                <tr>
+                    <td>Dubai</td>
+                    <td class="right-aligned-cell">14 290 000</td>
+                </tr>
+                <tr>
+                    <td>Beijing</td>
+                    <td class="right-aligned-cell">19 270 000</td>
+                </tr>
+            </table>
+        </div>
+
+        <hr>
+
+        <div class="topics" id="navigation-div">
+            <h2>Navigation</h2>
+            <p>Select the appropriate menu depending on layout and eventual need for sub-menu. Page changes can be coded
+                using html hyperlinks or Javascript functions</p>
+
+            <br>
+
+            <h3>Vertical menu</h3>
+            <p>Vertical menu is to be used as default, see for example the menu for this styleguide. Set CSS
+                position-property to fixed and adjust position (such as is done with the manu for this styleguide).
+                <br>
+                <span class="emphasized">
+                    <span class="semibold-weight">Note:</span> All (href) links in the example is set to this section.
+                    In a real world example, enter the path to
+                    the html-file or subsection you wish to direkt the navigation link to.</span>
+            </p>
+
+            <div id="vertical-menu-example" class="borders-general semibold-weight">
+                <a href="#navigation-div">Home</a>
+                <a href="#navigation-div">About us</a>
+                <a href="#navigation-div">Some section</a>
+                <a href="#navigation-div">Another section</a>
+            </div>
+
+            <br><br>
+
+            <h3>Sub-navigation</h3>
+            <p>When needed use sub-nav links for the menu, by styling a sub-navigation sub-division of the menu-choice
+                in question. In the following example, we highlight the sub-navigation choices for the page "About us",
+                by adding CSS stylings.</p>
+
+            <div id="vertical-menu-example" class="borders-general semibold-weight">
+                <a href="#navigation-div">Home</a>
+                <a href="#navigation-div">About us</a>
+                <div class="subnav small-text emphasized">
+                    <a href="#navigation-div">History</a>
+                    <a href="#navigation-div">Careers</a>
+                </div>
+            </div>
+            <br>
+            <p>In the coming styleguide update, we will insert an Javascript-based menu guide</p>
+
+            <br>
+
+            <h3>Horizontal menu</h3>
+            <p>When needed, e.g. if the content needs all the horizontal space on the page, use a horizontal menu. The
+                primarily rule is to fix the menu at the top, by adding fixed position and determine position.</p><br>
+
+            <div id="horizontal-menu-example" class="borders-general semibold-weight">
+                <a href="#navigation-div">Home</a>
+                <a href="#navigation-div">About us</a>
+                <a href="#navigation-div">Some section</a>
+                <a href="#navigation-div">Another section</a>
+            </div>
 
         </div>
 
+        <hr>
+
+        <div class="topics" id="information-div">
+            <h3>Information</h3>
+            <p>General rules for informing the users or stakeholders that are using our systems and web pages:</p>
+            <ul>
+                <li>Use clear and concise language</li>
+                <li>Adjust to the siutuation, e.g. IT-breach needs serious and determined language</li>
+                <li>Only use messages to user when necessary</li>
+            </ul><br>
+
+            <h3>Messages</h3>
+            <p>A typical message to the users is confirmation messages. Situation is given by the message text in these
+                following recuuring examples.</p><br>
+
+
+            <h3>Warnings</h3>
+            <p>.....................</p>
+
+        </div>
+
+        <hr>
+
+        <div class="topics" id="loadpinner-div">
+            <h3>Loadpinner styles</h3>
+            <p>The following loadpinner styles shall be followed</p><br>
+
+
+        </div>
 
     </section>
 
