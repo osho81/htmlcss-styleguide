@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TW Styleguide</title>
+    <link rel="icon" href="safety-pin.ico">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/beb6596d0f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <h3 id="corner-title">Wigell Styleguide <i class="fa-solid fa-pen-clip"></i></h3>
+
+    <section id="main-content">
+
+        <!-- Navbar with html/css, without js for the purpose of this project -->
+        <div class="main-menu semibold-weight borders-general">
+            <a href="./index.html">Home</a>
+            <a href="./general.html">General design</a>
+
+            <div class="subnav small-text emphasized">
+                <a href="#headings-div">Headings</a>
+                <a href="#text-design-div">Text design</a>
+                <a href="#colors-div">Color scheme</a>
+                <a href="#color-variation-div">Color variation</a>
+            </div>
+
+            <a href="./components.html">Components</a>
+            <a href="./index.html#mail">Contact</a>
+        </div>
+
+        <div class="topics">
+            <h1>General design rules </h1>
+            <p>The following general design topics should be adhered to, where nothing else is stated.</p>
+        </div>
+
+        <hr>
+
+        <div class="topics" id="headings-div">
+            <h2>Headings</h2>
+            <p>The following headings shall be used</p>
+            <h1>I am a very large heading (h1); Use me for page headings</h1>
+            <h2>I am a large heading (h2); Use me for section headings</h2>
+            <h3>I am a medium sized heading (h3); Use me for sub-section headings</h3>
+            <h4>I am a relatively small heading (h4); Use me if further sub-division is needed</h4>
+        </div>
+
+        <hr>
+
+        <div class="topics" id="text-design-div">
+            <h2>Text design</h2>
+            <p>Typographical rules for body-text, i.e. the content of an article, ad, news, etc.</p><br>
+
+            <h3>Text size and weight</h3>
+            <p class="small-text">Use me when you need smaller text size: regular weight;
+                <span class="semibold-weight"> or semibold;</span>
+                <span class="bold-weight">or bold</span>
+            </p>
+            <p class="medium-text">Use me when as medium & standard text size: regular weight;
+                <span class="semibold-weight"> or semibold;</span>
+                <span class="bold-weight">or bold</span>
+            </p>
+            </p>
+            <p class="large-text">Use me when you need larger text size: regular weight;
+                <span class="semibold-weight"> or semibold;</span>
+                <span class="bold-weight">or bold</span>
+            </p>
+            <br>
+
+            <h3>Text fonts</h3>
+            <p class="helvetica-text">I am Helvetica; use me as standard, when nothing else is stated</p>
+            <p class="poppins-text">I am google-font "Poppins"; use me for variation, e.g. in an alert</p>
+            <br>
+
+            <h3>"Fallback" fonts</h3>
+            <p>I am an ordinary sans-serif that almost always work; use me as a fallback font</p><br>
+
+            <h3>Choosing text-size/weight</h3>
+            <p>
+            <ul>
+                <li>Heading: follow body-text text-size with bold weight</li>
+                <li>Preamble: select larger font-size with semibold weight</li>
+                <li>Body-text: select standard/medium text-size with regular weight</li>
+            </ul>
+            </p>
+            <p>Bold text is to be used for emphasized parts, where italic
+                <span class="emphasized">italic</span>
+                is not sufficient.
+            </p>
+            <br>
+
+            <h3>Spacing etc.</h3>
+            <p>Use empty linebreaks between each sub-section for improved readability.</p>
+
+        </div>
+
+        <hr>
+
+        <div class="topics" id="colors-div">
+            <h2>Color scheme</h2>
+            <p>The colors and combinations specified here should be adhered to, if nothing else i stated</p><br>
+
+            <h3>Body-text color</h3>
+            <p>For ordinary content (ordinary info, ads, this styleguide, etc.), use
+                <span class="black-text bold-weight">soft black</span> or
+                <span class="yellow-text bold-weight body-color-dark">yellow</span>
+            </p>
+            <p>For less happy matters (layoffs, negative economic numbers, etc.), use
+                <span class="black-text bold-weight">soft black</span> or
+                <span class="red-text bold-weight">red</span>
+            </p> <br>
+
+            <h3>Header color</h3>
+            <p>Follows the chosen body-text color.</p><br>
+
+            <h3>Icon color</h3>
+            <p>Follows the chosen header color.</p><br>
+
+            <h3>Background and border colors</h3>
+            <div class="white-div">
+                <ul>
+                    <li class="body-color-light">Body background color, light</li>
+                    <li class="body-color-dark">Body background color, dark</li>
+                    <li class="menu-color">Menu, header & footer background color</li>
+                    <li class="borders-general">Border color</li>
+                </ul>
+            </div>
+            <br>
+
+            <h3>Color combinations</h3>
+            <p>Primarily accessibility reasons requires the following color combinations to be used: </p>
+            <div class="white-div">
+                <ul>
+                    <li id="light-black-mix">Light background - black text</li>
+                    <li id="dark-yellow-mix">Dark background - yellow text</li>
+                    <li id="light-red-mix">Light background - red text</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="topics" id="color-variation-div">
+            <h2>Color variation</h2>
+            <p>The main colors in the scheme can be variated (standard color in the middle):</p><br>
+
+            <h3>Black variation</h3>
+            <span class="dot" id="lighter-black"></span>
+            <span class="dot" id="standard-black"></span>
+            <span class="dot" id="darker-black"></span>
+
+            <h3>Red variation</h3>
+            <span class="dot" id="lighter-yellow"></span>
+            <span class="dot" id="standard-yellow"></span>
+            <span class="dot" id="darker-yellow"></span>
+
+            <h3>Yellow variation</h3>
+            <span class="dot" id="lighter-red"></span>
+            <span class="dot" id="standard-red"></span>
+            <span class="dot" id="darker-red"></span>
+        </div>
+
+    </section>
+
+    <hr>
+
+    <footer class="borders-general">
+        <p class="emphasized">For styles & colors for specific components, see under the Component section</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Home webage (index.html) -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Browser tab title and tab icon -->
+    <title>TW Styleguide</title>
+    <!-- <link rel="icon" href="safety-pin.ico"> -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- External add of css to html -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Kit key for "cdn" for fontawsome: -->
+    <script src="https://kit.fontawesome.com/beb6596d0f.js" crossorigin="anonymous"></script>
+
+    <!-- Link the selected Google fonts from google fonts webpage -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <h3 id="corner-title">Wigell Styleguide <i class="fa-solid fa-pen-clip"></i></h3>
+
+    <section id="main-content">
+
+        <!-- Navbar with html/css, without js for the purpose of this project -->
+        <div class="main-menu semibold-weight">
+            <a href="./index.html">Home</a>
+            <a href="./general.html">General design</a>
+            <a href="./components.html">Components</a>
+            <a href="#mail">Contact</a>
+        </div>
+
+        <div class="topics">
+            <h1>Styleguide for Wigell Corporation</h1>
+
+            <p>
+                This styleguide is to be used within Wigell Corporation, where nothing else is stated.
+                It is continuosly developed by IT-department of the Wigell Corporation.
+                <br><br>
+                Click on the different sections in the menu to read more on:<br>
+            </p>
+
+            <ul>
+                <li>General design guides: text, headers, colors etc</li>
+                <li>Guidelines on recurring specific elements/components</li>
+            </ul>
+
+            <p>For any questions, feel free to contact the IT-support</p><br>
+
+        </div>
+
+        <div>
+            <img src="/design.png" alt="Pic of design work" class="topics">
+        </div>
+
+    </section>
+
+    <hr>
+
+    <!-- Contact footer with mail icon from fontawsome (fa-solid fa-rocket), & funtion by id in index.js -->
+    <footer id="contact-footer" class="borders-general">
+        <p><i id="mail" class="fa fa-envelope" aria-hidden="true"></i> Email IT-support</p>
+    </footer>
+
+    <!-- Insert js script with file path to js file, to run js  -->
+    <!-- For this html/css project, js is used only if needed  -->
+    <script src="index.js"></script>
+</body>
+
+</html>
