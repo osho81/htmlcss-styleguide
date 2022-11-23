@@ -63,7 +63,7 @@
             <p>The following button styles shall be adhered to</p><br>
 
             <h3>Standard buttons</h3>
-            <p> Use any of these buttons in all cases, except for when the special buttons should be used. The button
+            <p> Use this button in all cases, except for when the special buttons should be used. The button
                 text exemplifies typiccal usage of a standard button. Width follows text-width, If
                 needs to fix width, align with positive buttons width.</p>
 
@@ -74,7 +74,7 @@
             <br><br>
 
             <h3>Functional buttons</h3>
-            <p> Use any of these for specific actions, e.g. download or print out. These buttons should have a pertinent
+            <p> Use this button for specific actions, e.g. download or print out. These buttons should have a pertinent
                 icon.</p>
 
             <button class="functional-btn"><i class="fa-solid fa-download"></i> Download</button>
@@ -83,7 +83,7 @@
             <br><br>
 
             <h3>Positive buttons</h3>
-            <p> Use any of these buttons for postive choices, such as the following examples.</p>
+            <p> Use this buttons for postive choices, such as the following examples.</p>
 
             <button class="positive-btn">OK</button>
             <button class="positive-btn">Accept</button>
@@ -93,7 +93,7 @@
             <br><br>
 
             <h3>Negative buttons</h3>
-            <p> Use any of these buttons for negative choices, such as the following examples.</p>
+            <p> Use this buttons for negative choices, such as the following examples.</p>
 
             <button class="negative-btn">Cancel</button>
             <button class="negative-btn">Delete</button>
@@ -305,14 +305,27 @@
 
             <h3 id="panels-subdiv">Panels</h3>
             <p>Panels are information of more general or optional nature, that can contain positive, neutral or
-                negative information content. Select appropriate panel/banner (and click on the X to close). </p><br>
+                negative information content. Select appropriate panel/banner and its aligned button.</p><br>
 
-            <button class="positive-btn" onclick="openPanel()">Open positive sidepnel</button>
+            <button id="positive-panel-btn" class="open-panel-btn positive-btn">Open positive sidepanel</button>
+            <button id="neutral-panel-btn" class="open-panel-btn standard-btn">Open neutral sidepanel</button>
+            <button id="negative-panel-btn" class="open-panel-btn negative-btn">Open negative sidepanel</button>
 
             <div id="positive-panel" class="sidepanel large-text semibold-weight">
-                <span class="closing-x">&times;</span>
+                <span class="closing-panel-x">&times;</span>
                 <p>I am a sidepanel to inform about positive matters</p>
             </div>
+            <div id="neutral-panel" class="sidepanel large-text semibold-weight">
+                <span class="closing-panel-x">&times;</span>
+                <p>I am a sidepanel to inform about neutral matters</p>
+            </div>
+            <div id="negative-panel" class="sidepanel large-text semibold-weight">
+                <span class="closing-panel-x">&times;</span>
+                <p>I am a sidepanel to inform about negative matters</p>
+            </div>
+            <br><br>
+
+            <p class="small-text emphasized">Click on any buttons to see its panel type (then click x to close the panel)</p>
 
 
         </div>
@@ -325,8 +338,25 @@
 
             <div>
                 <div class="loadspinner load-group"></div>
-                <span class="load-span load-group small-text semibold-weight">Loading...</span>
+                <span class="load-span load-group small-text semibold-weight">
+                    <span class="blinking-dot">Lo</span>
+                    <span class="blinking-dot">ad</span>
+                    <span class="blinking-dot">ing</span>
+                </span>
             </div>
+
+        </div>
+
+        <hr>
+
+        <div class="topics" id="form-div">
+            <h2>Forms</h2>
+            <p>Forms for inputs and selections should follow this section.</p><br>
+
+
+            <h3 id="panels-subdiv">Forms </h3>
+            <p></p>
+
 
         </div>
 

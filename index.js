@@ -50,20 +50,28 @@ for (i = 0; i < closingArray.length; i++) {
     }
 }
 
-// Functions for opening panels
-waitForLoad("info-subnav", function () {
-    document.getElementById("info-subnav").onclick = function () {
-        if (document.getElementById("sub-subnav").style.display == "block") {
-            document.getElementById("sub-subnav").style.display = "none";
-            document.getElementById("subnav-icon").classList.replace("fa-caret-up", "fa-caret-down");
-        } else {
-            document.getElementById("sub-subnav").style.display = "block";
-            document.getElementById("subnav-icon").classList.replace("fa-caret-down", "fa-caret-up");
-        }
+// Functions for opening a certain panel
+waitForLoad("positive-panel-btn", function () {
+    document.getElementById("positive-panel-btn").onclick = function () {
+        document.getElementById("positive-panel").style.height = "200px";
+        document.getElementById("positive-panel").style.width = "400px";
+        document.getElementById("positive-panel").style.padding = "25px";
     }
 });
-document.getElementById("mySidenav").style.width = "250px";
-document.getElementById("main").style.marginLeft = "250px";
+waitForLoad("neutral-panel-btn", function () {
+    document.getElementById("neutral-panel-btn").onclick = function () {
+        document.getElementById("neutral-panel").style.height = "200px";
+        document.getElementById("neutral-panel").style.width = "400px";
+        document.getElementById("neutral-panel").style.padding = "25px";
+    }
+});
+waitForLoad("negative-panel-btn", function () {
+    document.getElementById("negative-panel-btn").onclick = function () {
+        document.getElementById("negative-panel").style.height = "200px";
+        document.getElementById("negative-panel").style.width = "400px";
+        document.getElementById("negative-panel").style.padding = "25px";
+    }
+});
 
 // Function to close a panel
 var closingPanelArray = document.getElementsByClassName("closing-panel-x"); // returns all elements with this class
@@ -73,10 +81,10 @@ for (i = 0; i < closingPanelArray.length; i++) {
     // Close parent message of the returned array 
     closingPanelArray[i].onclick = function () {
         var div = this.parentElement;
-        div.style.opacity = "0";
+        // div.style.opacity = "0";
 
         // Fade out when shutting it down, and remove from display
-        setTimeout(function () { div.style.display = "none"; }, 300);
+        setTimeout(function () { div.style.height = "0"; div.style.width = "0"; div.style.padding = "0"; }, 300);
     }
 }
 
