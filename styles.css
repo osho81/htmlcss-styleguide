@@ -93,7 +93,7 @@ li {
     ;
 }
 
-.medkium-text {
+.medium-text {
     font-size: 16px;
     ;
 }
@@ -295,6 +295,45 @@ td {
     display: inline-block;
 }
 
+.alert {
+    padding: 25px;
+    color: white;
+    opacity: 1;
+    transition: opacity 0.6s;
+    margin-bottom: 15px;
+}
+
+.closing-x {
+    /* margin-left: 10px; */
+    color: white;
+    font-weight: 900;
+    float: right;
+    font-size: 32px;
+    line-height: 16px;
+    cursor: pointer;
+    /* transition: 0.1s; */
+}
+
+.closing-x:hover {
+    color: rgb(16, 16, 16);
+}
+
+.alert.success {
+    background-color: rgb(14, 191, 126);
+}
+
+.alert.neutral {
+    background-color: rgb(108, 110, 251);
+}
+
+.alert.warning {
+    background-color: rgb(255, 156, 7);
+}
+
+.alert.danger {
+    background-color: rgb(241, 76, 76);
+}
+
 #lighter-black {
     background-color: rgb(72, 72, 72);
 }
@@ -331,6 +370,32 @@ td {
     background-color: rgb(107, 13, 13);
 }
 
+.load-group {
+    display: inline-block;
+}
+
+.loadspinner {
+    width: 20px;
+    height: 20px;
+    border: 10px dashed rgb(255, 255, 255);
+    border-top: 10px solid rgb(76, 64, 248);
+    border-radius: 50%;
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.load-span {
+    margin-left: 5px;
+}
 
 footer {
     font-family: Poppins, sans-serif;

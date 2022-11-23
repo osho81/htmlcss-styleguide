@@ -14,14 +14,12 @@
 
 <body>
     <!-- 
-messages/warnings 
+        panel, pos, neutral, neg
 
-loadspinner
+        loadspinner
 
-panel, pos, neutral, neg
-
-forms: labels, input, selection
- -->
+        forms: labels, input, selection
+        -->
 
 
 
@@ -40,6 +38,8 @@ forms: labels, input, selection
                 <a href="#tables-div">Tables</a>
                 <a href="#navigation-div">Navigation</a>
                 <a href="#information-div">Information</a>
+                <a href="#panel-div">Panel</a>
+                <a href="#loader-div">Loader</a>
             </div>
         </div>
 
@@ -188,17 +188,16 @@ forms: labels, input, selection
             <h2>Navigation</h2>
             <p>Select the appropriate menu depending on layout and eventual need for sub-menu. Page changes can be coded
                 using html hyperlinks or Javascript functions</p>
-
-            <br>
+            <p class="emphasized small-text">
+                <span class="semibold-weight">Note:</span>
+                All (href) links in these examples are directed to this Naviagtion section.
+                In a real world example, instead enter the path to the html-file or subsection you wish to direkt
+                the navigation link to.
+            </p><br>
 
             <h3>Vertical menu</h3>
             <p>Vertical menu is to be used as default, see for example the menu for this styleguide. Set CSS
                 position-property to fixed and adjust position (such as is done with the manu for this styleguide).
-                <br>
-                <span class="emphasized">
-                    <span class="semibold-weight">Note:</span> All (href) links in the example is set to this section.
-                    In a real world example, enter the path to
-                    the html-file or subsection you wish to direkt the navigation link to.</span>
             </p>
 
             <div id="vertical-menu-example" class="borders-general semibold-weight">
@@ -245,34 +244,78 @@ forms: labels, input, selection
 
         <div class="topics" id="information-div">
             <h3>Information</h3>
-            <p>General rules for informing the users or stakeholders that are using our systems and web pages:</p>
+            <p>General rules for informing the users or stakeholders that uses our systems and websites:</p>
             <ul>
                 <li>Use clear and concise language</li>
                 <li>Adjust to the siutuation, e.g. IT-breach needs serious and determined language</li>
                 <li>Only use messages to user when necessary</li>
             </ul><br>
 
-            <h3>Messages</h3>
-            <p>A typical message to the users is confirmation messages. Situation is given by the message text in these
-                following recuuring examples.</p><br>
+            <h3>Confirmation messages & neutral information</h3>
+            <p>Typical message to users is a confirmation message, e.g. successful download. Another non-critical
+                message is neutral information to the user, such as planned maintenance of the website.</p><br>
 
+            <div class="alert success">
+                <span class="closing-x">&times;</span>
+                <strong>Success!</strong> Indicates a successful or positive action.
+            </div>
 
-            <h3>Warnings</h3>
-            <p>.....................</p>
+            <div class="alert neutral">
+                <span class="closing-x">&times;</span>
+                <strong>Info!</strong> Indicates a neutral informative change or action.
+            </div>
+
+            <br><br>
+
+            <h3>Warning messages & danger alerts</h3>
+            <p>If a message is to warn the user, use these information approaches depending on the seriosity of the
+                matter.</p><br>
+
+            <div class="alert warning">
+                <span class="closing-x">&times;</span>
+                <strong>Warning!</strong> Indicates a warning that might need attention.
+            </div>
+
+            <div class="alert danger">
+                <span class="closing-x">&times;</span>
+                <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+            </div>
+
+            <br>
+
+            <p class="emphasized small-text">
+                Click on the x-button to close down the messages above. If they are already closed and gone, refresh
+                page by clicking
+                <span id="refresh-page" class="medium-text bold-weight">here</span>.
+            </p>
+        </div>
+
+        <hr>
+
+        <div class="topics" id="panel-div">
+            <h3>Panel</h3>
+            <p>Panel are information that can contain </p><br>
+
 
         </div>
 
         <hr>
 
-        <div class="topics" id="loadpinner-div">
-            <h3>Loadpinner styles</h3>
-            <p>The following loadpinner styles shall be followed</p><br>
+        <div class="topics" id="loader-div">
+            <h3>Loader</h3>
+            <p>The following loadspinner is our standard spinner.</p><br>
 
+            <div>
+                <div class="loadspinner load-group"></div>
+                <span class="load-span load-group small-text semibold-weight">Loading...</span>
+            </div>
 
         </div>
 
     </section>
 
+    <!-- Used to close messages with x-btn -->
+    <script src="index.js"></script>
 </body>
 
 </html>
