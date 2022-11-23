@@ -37,8 +37,15 @@
                 <a href="#buttons-div">Button styles</a>
                 <a href="#tables-div">Tables</a>
                 <a href="#navigation-div">Navigation</a>
-                <a href="#information-div">Information</a>
-                <a href="#panel-div">Panel</a>
+
+                <a href="#information-div" id="info-subnav">Information <i class="fa-solid fa-caret-down"
+                        id="subnav-icon"></i></a>
+                <div class="regular-weight" id="sub-subnav">
+                    <a href="#messages-subdiv">Messages</a>
+                    <a href="#warnings-subdiv">Warnings</a>
+                    <a href="#panels-subdiv">Panels</a>
+                </div>
+
                 <a href="#loader-div">Loader</a>
             </div>
         </div>
@@ -243,42 +250,47 @@
         <hr>
 
         <div class="topics" id="information-div">
-            <h3>Information</h3>
-            <p>General rules for informing the users or stakeholders that uses our systems and websites:</p>
+            <h2>Information</h2>
+            <p>This section deals with messages, warnings & panels for information. The overall rules for informing the
+                users or stakeholders that uses our systems and websites:</p>
             <ul>
+                <li>If the information is narrow and regards a specific action/change, use a message/warning</li>
+                <li>If the information is of more general or optional nature, consider using a panel instead
+                </li>
                 <li>Use clear and concise language</li>
                 <li>Adjust to the siutuation, e.g. IT-breach needs serious and determined language</li>
-                <li>Only use messages to user when necessary</li>
+                <li>Only inform and alert users when necessary</li>
             </ul><br>
 
-            <h3>Confirmation messages & neutral information</h3>
-            <p>Typical message to users is a confirmation message, e.g. successful download. Another non-critical
-                message is neutral information to the user, such as planned maintenance of the website.</p><br>
+            <h3 id="messages-subdiv">Messages</h3>
+            <p>Confirmation message and neutral information are information on actions and changes with no noteworthy
+                negative consequences. Examples are a successful download confirmation or neutral information on number
+                of minutes left.</p><br>
 
             <div class="alert success">
                 <span class="closing-x">&times;</span>
-                <strong>Success!</strong> Indicates a successful or positive action.
+                <strong>Success:</strong> regards a successful positive action
             </div>
 
             <div class="alert neutral">
                 <span class="closing-x">&times;</span>
-                <strong>Info!</strong> Indicates a neutral informative change or action.
+                <strong>Info:</strong> regards a neutral action or change
             </div>
 
             <br><br>
 
-            <h3>Warning messages & danger alerts</h3>
-            <p>If a message is to warn the user, use these information approaches depending on the seriosity of the
+            <h3 id="warnings-subdiv">Warnings</h3>
+            <p>If a message is to warn the user, use these information style depending on the seriosity of the
                 matter.</p><br>
 
             <div class="alert warning">
                 <span class="closing-x">&times;</span>
-                <strong>Warning!</strong> Indicates a warning that might need attention.
+                <strong>Warning:</strong> informs on a risk with negative effects
             </div>
 
             <div class="alert danger">
                 <span class="closing-x">&times;</span>
-                <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+                <strong>Danger:</strong> regards a potentially dangerous and risky action
             </div>
 
             <br>
@@ -288,13 +300,19 @@
                 page by clicking
                 <span id="refresh-page" class="medium-text bold-weight">here</span>.
             </p>
-        </div>
 
-        <hr>
+            <br>
 
-        <div class="topics" id="panel-div">
-            <h3>Panel</h3>
-            <p>Panel are information that can contain </p><br>
+            <h3 id="panels-subdiv">Panels</h3>
+            <p>Panels are information of more general or optional nature, that can contain positive, neutral or
+                negative information content. Select appropriate panel/banner (and click on the X to close). </p><br>
+
+            <button class="positive-btn" onclick="openPanel()">Open positive sidepnel</button>
+
+            <div id="positive-panel" class="sidepanel large-text semibold-weight">
+                <span class="closing-x">&times;</span>
+                <p>I am a sidepanel to inform about positive matters</p>
+            </div>
 
 
         </div>
@@ -302,8 +320,8 @@
         <hr>
 
         <div class="topics" id="loader-div">
-            <h3>Loader</h3>
-            <p>The following loadspinner is our standard spinner.</p><br>
+            <h2>Loader</h2>
+            <p>The following loader is our standard loadspinner.</p><br>
 
             <div>
                 <div class="loadspinner load-group"></div>
