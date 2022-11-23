@@ -88,5 +88,16 @@ for (i = 0; i < closingPanelArray.length; i++) {
     }
 }
 
+// Code for displaying html and css code
+function openCodeView(codeName) {
+    // Display current tab-content passed in as arg
+    if (document.getElementById(codeName).style.display == "") {
+        document.getElementById(codeName).style.display = "block";
+    } else {
+        document.getElementById(codeName).style.display = "";
+    }
+
+  }
+
 
 

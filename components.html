@@ -13,17 +13,6 @@
 </head>
 
 <body>
-    <!-- 
-        panel, pos, neutral, neg
-
-        loadspinner
-
-        forms: labels, input, selection
-        -->
-
-
-
-
     <h3 id="corner-title">Wigell Styleguide <i class="fa-solid fa-pen-clip"></i></h3>
 
     <section id="main-content">
@@ -100,6 +89,84 @@
             <button class="negative-btn">Delete</button>
             <button class="negative-btn">Decline</button>
             <button class="negative-btn">No</button>
+
+            <br><br><br>
+
+            <button class="positive-btn" onclick="openCodeView('button-html')">Click me for HTML code</button>
+            <button class="positive-btn" onclick="openCodeView('button-css')">Click me for CSS code</button>
+    
+            <div class="code-example-div" id="button-html">
+                    <pre>
+                        &lt;button class="standard-btn"&gt;Previous&lt;/button&gt;
+                        &lt;button class="functional-btn"&gt;&lt;i class="fa-solid fa-download"&gt;&lt;/i&gt; Download&lt;/button&gt;
+                        &lt;button class="positive-btn"&gt;OK&lt;/button&gt;
+                        &lt;button class="negative-btn"&gt;Cancel&lt;/button&gt;
+                    </pre>
+            </div>
+    
+            <div class="code-example-div" id="button-css">
+                <pre>
+                    .standard-btn {
+                        background-color: rgb(194, 194, 194);
+                        border: 2px solid rgb(50, 50, 50);
+                        border-radius: 5px;
+                        cursor: pointer;
+                        font-family: Helvetica, sans-serif;
+                        color: rgb(50, 50, 50);
+                        font-size: 12px;
+                        font-weight: 600;
+                        margin: 5px;
+                        padding: 7px 7px;
+                        text-align: center;
+                        display: inline-block;
+                    }
+                    .functional-btn {
+                        background-color: rgb(135, 149, 249);
+                        border: 4px solid rgb(50, 50, 50);
+                        border-radius: 5px;
+                        cursor: pointer;
+                        font-family: Poppins, sans-serif;
+                        color: rgb(50, 50, 50);
+                        font-size: 12px;
+                        font-weight: 600;
+                        margin: 5px;
+                        padding: 7px 7px;
+                        width: 120px;
+                        text-align: center;
+                        display: inline-block;
+                    }
+                    .negative-btn {
+                        background-color: rgb(249, 114, 114);
+                        border: 2px solid rgb(50, 50, 50);
+                        border-radius: 5px;
+                        cursor: pointer;
+                        font-family: Helvetica, sans-serif;
+                        color: rgb(50, 50, 50);
+                        font-size: 12px;
+                        font-weight: 600;
+                        margin: 5px;
+                        padding: 7px 7px;
+                        width: 80px;
+                        text-align: center;
+                        display: inline-block;
+                    }
+                    .positive-btn {
+                        background-color: rgb(208, 249, 224);
+                        border: 2px solid rgb(50, 50, 50);
+                        border-radius: 5px;
+                        cursor: pointer;
+                        font-family: Helvetica, sans-serif;
+                        color: rgb(50, 50, 50);
+                        font-size: 12px;
+                        font-weight: 600;
+                        margin: 5px;
+                        padding: 7px 7px;
+                        width: 80px;
+                        text-align: center;
+                        display: inline-block;
+                    }
+                </pre>
+           </div><br>
         </div>
 
         <hr>
@@ -153,9 +220,69 @@
                     <td class="right-aligned-cell">64</td>
                     <td>michael@gmail.com</td>
                 </tr>
-            </table>
+            </table><br>
 
-            <br><br>
+            <button class="positive-btn" onclick="openCodeView('table-html')">Click me for HTML code</button>
+            <button class="positive-btn" onclick="openCodeView('table-css')">Click me for CSS code</button>
+
+            <div class="code-example-div" id="table-html">
+                <pre>
+                    &lt;table class="multiple-col-table"&gt;
+                        &lt;tr&gt;
+                            &lt;th&gt;ID&lt;/th&gt;
+                            &lt;th&gt;First Name&lt;/th&gt;
+                            &lt;th&gt;Last Name&lt;/th&gt;
+                            &lt;th&gt;SSN&lt;/th&gt;
+                            &lt;th class="right-aligned-cell"&gt;Age&lt;/th&gt;
+                            &lt;th&gt;Email&lt;/th&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;1&lt;/td&gt;
+                            &lt;td&gt;Donald&lt;/td&gt;
+                            &lt;td&gt;Trump&lt;/td&gt;
+                            &lt;td&gt;123456789&lt;/td&gt;
+                            &lt;td class="right-aligned-cell"&gt;78&lt;/td&gt;
+                            &lt;td&gt;donald@gmail.com&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;2&lt;/td&gt;
+                            &lt;td&gt;Joe&lt;/td&gt;
+                            &lt;td&gt;Biden&lt;/td&gt;
+                            &lt;td&gt;987654321&lt;/td&gt;
+                            &lt;td class="right-aligned-cell"&gt;80&lt;/td&gt;
+                            &lt;td&gt;joe@gmail.com&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;3&lt;/td&gt;
+                            &lt;td&gt;Michael&lt;/td&gt;
+                            &lt;td&gt;Jackson&lt;/td&gt;
+                            &lt;td&gt;789123456&lt;/td&gt;
+                            &lt;td class="right-aligned-cell"&gt;64&lt;/td&gt;
+                            &lt;td&gt;michael@gmail.com&lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/table&gt;
+                </pre>
+            </div>
+
+            <div class="code-example-div" id="table-css">
+                <pre>
+                    .multiple-col-table {
+                        width: 700px;
+                        border: 1px solid rgb(50, 50, 50);
+                        border-collapse: collapse;
+                    }
+                    th, td {
+                        padding: 8px;
+                        border: 1px solid rgb(50, 50, 50);
+                    }
+                    .multiple-col-table tr:nth-child(even) {
+                        background-color: #D6EEEE;
+                    }
+                    .right-aligned-cell {
+                        text-align: right;
+                    }
+                </pre>
+            </div><br><br>
 
             <h3>Table with few columns</h3>
             <p>When table columns/values are few, less than 3, use this longer table. Such tables usually have many
@@ -213,9 +340,7 @@
                 <a href="#navigation-div">About us</a>
                 <a href="#navigation-div">Some section</a>
                 <a href="#navigation-div">Another section</a>
-            </div>
-
-            <br><br>
+            </div><br><br>
 
             <h3>Sub-navigation</h3>
             <p>When needed use sub-nav links for the menu, by styling a sub-navigation sub-division of the menu-choice
@@ -229,11 +354,42 @@
                     <a href="#navigation-div">History</a>
                     <a href="#navigation-div">Careers</a>
                 </div>
-            </div>
-            <br>
-            <p>In the coming styleguide update, we will insert an Javascript-based menu guide</p>
+            </div><br>
 
-            <br>
+            <button class="positive-btn" onclick="openCodeView('menu-html')">Click me for HTML code</button>
+            <button class="positive-btn" onclick="openCodeView('menu-css')">Click me for CSS code</button>
+
+            <div class="code-example-div" id="menu-html">
+                <pre>
+                    &lt;div id="vertical-menu-example" class="borders-general semibold-weight"&gt;
+                        &lt;a href="#navigation-div"&gt;Home&lt;/a&gt;
+                        &lt;a href="#navigation-div"&gt;About us&lt;/a&gt;
+                        &lt;div class="subnav small-text emphasized"&gt;
+                            &lt;a href="#navigation-div"&gt;History&lt;/a&gt;
+                            &lt;a href="#navigation-div"&gt;Careers&lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                </pre>
+            </div>
+
+            <div class="code-example-div" id="menu-css">
+                <pre>
+                    #vertical-menu-example {
+                        background-color: white;
+                        margin-top: 40px;
+                        padding: 10px;
+                        height: 80%;
+                        width: 175px;
+                    }
+                    #vertical-menu-example a {
+                        font-family: Poppins, sans-serif;
+                        color: rgb(50, 50, 50);
+                        text-decoration: none;
+                        display: block;
+                        margin: 20px;
+                    }
+                </pre>
+            </div><br><br>
 
             <h3>Horizontal menu</h3>
             <p>When needed, e.g. if the content needs all the horizontal space on the page, use a horizontal menu. The
@@ -300,9 +456,66 @@
                 Click on the x-button to close down the messages above. If they are already closed and gone, refresh
                 page by clicking
                 <span id="refresh-page" class="medium-text bold-weight">here</span>.
-            </p>
+            </p><br>
 
-            <br>
+            <button class="positive-btn" onclick="openCodeView('message-html')">Click me for HTML code</button>
+            <button class="positive-btn" onclick="openCodeView('message-css')">Click me for CSS code</button>
+
+            <div class="code-example-div" id="message-html">
+                <pre>
+                    &lt;div class="alert success"&gt;
+                        &lt;span class="closing-x"&gt;&times;&lt;/span&gt;
+                        &lt;strong&gt;Success:&lt;/strong&gt; regards a successful positive action
+                    &lt;/div&gt;
+                    &lt;div class="alert neutral"&gt;
+                        &lt;span class="closing-x"&gt;&times;&lt;/span&gt;
+                        &lt;strong&gt;Info:&lt;/strong&gt; regards a neutral action or change
+                    &lt;/div&gt;
+                    &lt;div class="alert warning"&gt;
+                        &lt;span class="closing-x"&gt;&times;&lt;/span&gt;
+                        &lt;strong&gt;Warning:&lt;/strong&gt; informs on a risk with negative effects
+                    &lt;/div&gt;
+                    &lt;div class="alert danger"&gt;
+                        &lt;span class="closing-x"&gt;&times;&lt;/span&gt;
+                        &lt;strong&gt;Danger:&lt;/strong&gt; regards a potentially dangerous and risky action
+                    &lt;/div&gt;
+                </pre>
+            </div>
+
+            <div class="code-example-div" id="message-css">
+                <pre>
+                    .alert {
+                        padding: 25px;
+                        color: white;
+                        opacity: 1;
+                        transition: opacity 0.6s;
+                        margin-bottom: 15px;
+                    }
+                    .closing-x {
+                        color: white;
+                        font-weight: 900;
+                        float: right;
+                        font-size: 32px;
+                        line-height: 16px;
+                        cursor: pointer;
+                    }
+                    .closing-x:hover {
+                        color: rgb(16, 16, 16);
+                    }
+                    .alert.success {
+                        background-color: rgb(14, 191, 126);
+                    }
+                    .alert.neutral {
+                        background-color: rgb(108, 110, 251);
+                    }
+                    .alert.warning {
+                        background-color: rgb(255, 156, 7);
+                    }
+                    .alert.danger {
+                        background-color: rgb(241, 76, 76);
+                    } 
+                </pre>
+            </div><br>
 
             <h3 id="panels-subdiv">Panels</h3>
             <p>Panels are information of more general or optional nature, that can contain positive, neutral or
@@ -327,9 +540,64 @@
             <br><br>
 
             <p class="small-text emphasized">Click on any buttons to see its panel type (then click x to close the
-                panel)</p>
+                panel)</p><br>
 
+            <button class="positive-btn" onclick="openCodeView('panel-html')">Click me for HTML code</button>
+            <button class="positive-btn" onclick="openCodeView('panel-css')">Click me for CSS code</button>
 
+            <div class="code-example-div" id="panel-html">
+                <pre>
+                    &lt;button id="positive-panel-btn" class="open-panel-btn positive-btn"&gt;Open positive sidepanel&lt;/button&gt;
+                    &lt;button id="neutral-panel-btn" class="open-panel-btn standard-btn"&gt;Open neutral sidepanel&lt;/button&gt;
+                    &lt;button id="negative-panel-btn" class="open-panel-btn negative-btn"&gt;Open negative sidepanel&lt;/button&gt;
+        
+                    &lt;div id="positive-panel" class="sidepanel large-text semibold-weight"&gt;
+                        &lt;span class="closing-panel-x"&gt;&times;&lt;/span&gt;
+                        &lt;p&gt;I am a sidepanel to inform about positive matters&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div id="neutral-panel" class="sidepanel large-text semibold-weight"&gt;
+                        &lt;span class="closing-panel-x"&gt;&times;&lt;/span&gt;
+                        &lt;p&gt;I am a sidepanel to inform about neutral matters&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div id="negative-panel" class="sidepanel large-text semibold-weight"&gt;
+                        &lt;span class="closing-panel-x"&gt;&times;&lt;/span&gt;
+                        &lt;p&gt;I am a sidepanel to inform about negative matters&lt;/p&gt;
+                    &lt;/div&gt;
+                </pre>
+            </div>
+
+            <div class="code-example-div" id="panel-css">
+                <pre>
+                        .sidepanel {
+                            height: 0;
+                            width: 0;
+                            position: fixed;
+                            z-index: 1;
+                            bottom: 0;
+                            right: 0;
+                            overflow-x: hidden;
+                            transition: 0.5s;
+                            text-align: center;
+                        }
+                        #positive-panel {
+                            background-color: rgb(208, 249, 224);
+                        }
+                        #neutral-panel {
+                            background-color: rgb(194, 194, 194);
+                        }
+                        #negative-panel {
+                            background-color: rgb(249, 114, 114);
+                        }
+                        .closing-panel-x {
+                            color: white;
+                            font-weight: 900;
+                            float: right;
+                            font-size: 48px;
+                            line-height: 24px;
+                            cursor: pointer;
+                        }
+                    </pre>
+            </div>
         </div>
 
         <hr>
@@ -345,6 +613,63 @@
                     <span class="blinking-dot">ad</span>
                     <span class="blinking-dot">ing</span>
                 </span>
+            </div>
+            <br><br>
+
+            <button class="positive-btn" onclick="openCodeView('loader-html')">Click me for HTML code</button>
+            <button class="positive-btn" onclick="openCodeView('loader-css')">Click me for CSS code</button>
+
+            <div class="code-example-div" id="loader-html">
+                <pre>
+                    &lt;div class="loadspinner load-group"&gt;&lt;/div&gt;
+                    &lt;span class="load-span load-group small-text semibold-weight"&gt;
+                        &lt;span class="blinking-dot"&gt;Lo&lt;/span&gt;
+                        &lt;span class="blinking-dot"&gt;ad&lt;/span&gt;
+                        &lt;span class="blinking-dot"&gt;ing&lt;/span&gt;
+                    &lt;/span&gt;
+                </pre>
+            </div>
+
+            <div class="code-example-div" id="loader-css">
+                <pre>
+                    .load-group {
+                        display: inline-block;
+                    }
+                    .loadspinner {
+                        width: 20px;
+                        height: 20px;
+                        border: 10px dashed rgb(255, 255, 255);
+                        border-top: 10px solid rgb(76, 64, 248);
+                        border-radius: 50%;
+                        animation: spin 3s linear infinite;
+                    }
+                    @keyframes spin {
+                        0% {
+                            transform: rotate(0deg);
+                        }
+                        100% {
+                            transform: rotate(360deg);
+                        }
+                    }
+                    .load-span {
+                        margin-left: 5px;
+                    }
+                    .blinking-dot {
+                        animation: 1s blinking infinite;
+                        margin-left: -4px;
+                    }
+                    .blinking-dot:nth-child(2) {
+                        animation-delay: 250ms;
+                    }
+                    .blinking-dot:nth-child(3) {
+                        animation-delay: 500ms;
+                    }
+                    @keyframes blinking {
+                        75% {
+                            color: rgb(76, 64, 248);
+                        }
+                    }
+                </pre>
             </div>
 
         </div>
@@ -385,8 +710,74 @@
                 <label for="return" id="student-question" class="small-text semibold-weight">Student?</label><br>
                 <input type="submit" value="Submit" id="submit-btn">
             </form>
+
             <br>
-            
+
+            <button class="positive-btn" onclick="openCodeView('form-html')">Click me for HTML code</button>
+            <button class="positive-btn" onclick="openCodeView('form-css')">Click me for CSS code</button>
+
+            <div class="code-example-div" id="form-html">
+                <pre>
+                    &lt;form id="submit-form"&gt;
+                            &lt;label for="fname" class="small-text semibold-weight"&gt;First name:&lt;/label&gt;&lt;br&gt;
+                            &lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt;
+                            &lt;label for="lname" class="small-text semibold-weight"&gt;Last name:&lt;/label&gt;&lt;br&gt;
+                            &lt;input type="text" id="ename" name="lname"&gt;&lt;br&gt;
+                            &lt;label for="email" class="small-text semibold-weight"&gt;Email:&lt;/label&gt;&lt;br&gt;
+                            &lt;input type="text" id="email" name="email"&gt;&lt;br&gt;
+                            &lt;label for="birthday" class="small-text semibold-weight"&gt;Birthday:&lt;/label&gt;&lt;br&gt;
+                            &lt;input id="birthday" type="date" name="birthday"&gt;&lt;br&gt;
+                            &lt;label for="language" class="small-text semibold-weight"&gt;Language:&lt;/label&gt;&lt;br&gt;
+                            &lt;select id="language" name="language" class="small-text"&gt;
+                                &lt;option value="arabic" selected&gt;Arabic&lt;/option&gt;
+                                &lt;option value="Chinese"&gt;Chinese&lt;/option&gt;
+                                &lt;option value="English"&gt;English&lt;/option&gt;
+                                &lt;option value="Swedish"&gt;Swedish&lt;/option&gt;
+                            &lt;/select&gt;&lt;br&gt;
+                            &lt;input type="checkbox" id="student" name="student"&gt;
+                            &lt;label for="return" id="student-question" class="small-text semibold-weight"&gt;Student?&lt;/label&gt;&lt;br&gt;
+                            &lt;input type="submit" value="Submit" id="submit-btn"&gt;
+                        &lt;/form&gt;
+                </pre>
+            </div>
+
+            <div class="code-example-div" id="form-css">
+                <pre>
+                    label, input, select {
+                        font-family: Helvetica, sans-serif;
+                        margin: 5px 0;
+                    }
+                    label {
+                        color: rgb(50, 50, 50);
+                    }
+                    input {
+                        color: rgb(50, 50, 50);
+                        width: 700px;
+                    }
+                    select {
+                        color: rgb(50, 50, 50);
+                        margin-top: 0;
+                        margin-bottom: 2px;
+                        color: black;
+                        width: 350px;
+                        padding: 2px;
+                    }
+                    #student, #student-question {
+                        color: rgb(50, 50, 50);
+                        margin: 10px 5px;
+                        width: auto;
+                        float: left;
+                    }
+                    #submit-btn {
+                        background-color: rgb(135, 149, 249);
+                        font-weight: 600;
+                        padding: 7px 35px;
+                        border: 3px solid rgb(18, 18, 18);
+                    }
+                </pre>
+            </div>
+        </div>
+
 
 
         </div>
