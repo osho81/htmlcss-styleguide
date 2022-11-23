@@ -44,7 +44,7 @@
         <div class="topics" id="headings-div">
             <h2>Headings</h2>
             <p>The following headings shall be used</p>
-            <h1>I am a very large heading (h1); Use me for page headings</h1>
+            <h1>I am a very large heading (h1 with font-size 28px); Use me for page headings</h1>
             <h2>I am a large heading (h2); Use me for section headings</h2>
             <h3>I am a medium sized heading (h3); Use me for sub-section headings</h3>
             <h4>I am a relatively small heading (h4); Use me if further sub-division is needed</h4>
@@ -70,7 +70,31 @@
                 <span class="semibold-weight"> or semibold;</span>
                 <span class="bold-weight">or bold</span>
             </p>
-            <br>
+
+            <button class="positive-btn" onclick="openCodeView('text-css')">Click me for CSS code</button>
+            <div class="code-example-div" id="text-css">
+                <pre>
+                    .small-text {
+                        font-size: 12px;
+                    }
+                    .medium-text {
+                        font-size: 16px;
+                    }
+                    .large-text {
+                        font-size: 20px;
+                    }>
+                    .regular-weight {
+                        font-weight: 400;
+                    }
+                    .semibold-weight {
+                        font-weight: 600;
+                    }
+                    .bold-weight {
+                        font-weight: 800;
+                    }
+                </pre>
+            </div><br><br>
+
 
             <h3>Text fonts</h3>
             <p class="helvetica-text">I am Helvetica; use me as standard, when nothing else is stated</p>
@@ -80,6 +104,28 @@
             <h3>"Fallback" fonts</h3>
             <p>I am an ordinary sans-serif that almost always work; use me as a fallback font</p><br>
 
+            <button class="positive-btn" onclick="openCodeView('font-html')">Click me for HTML code</button>
+            <button class="positive-btn" onclick="openCodeView('font-css')">Click me for CSS code</button>
+
+            <div class="code-example-div" id="font-html">
+                <pre>
+                    &lt;p class="helvetica-text"&gt;I am Helvetica; use me as standard, when nothing else is stated&lt;/p&gt;
+                    &lt;p class="poppins-text"&gt;I am google-font "Poppins"; use me for variation, e.g. in an alert&lt;/p&gt;
+                    &lt;p&gt;I am an ordinary sans-serif that almost always work; use me as a fallback font&lt;/p&gt;
+                </pre>
+            </div>
+
+            <div class="code-example-div" id="font-css">
+                <pre>
+                    .helvetica-text {
+                        font-family: Helvetica, sans-serif;
+                    }
+                    .poppins-text {
+                        font-family: Poppins, sans-serif;
+                    }
+                </pre>
+            </div>
+
             <h3>Choosing text-size/weight</h3>
             <p>
             <ul>
@@ -88,14 +134,14 @@
                 <li>Body-text: select standard/medium text-size with regular weight</li>
             </ul>
             </p>
-            <p>Bold text is to be used for emphasized parts, where italic
+            <p>Bold text is to be used for emphasized parts, where
                 <span class="emphasized">italic</span>
                 is not sufficient.
             </p>
             <br>
 
             <h3>Spacing etc.</h3>
-            <p>Use empty linebreaks between each sub-section for improved readability.</p>
+            <p>Use linebreaks between each sub-section for improved readability.</p>
 
         </div>
 
@@ -128,9 +174,26 @@
                     <li class="body-color-dark">Body background color, dark</li>
                     <li class="menu-color">Menu, header & footer background color</li>
                     <li class="borders-general">Border color</li>
-                </ul>
-            </div>
-            <br>
+                </ul><br>
+            </div><br>
+
+            <button class="positive-btn" onclick="openCodeView('backgrounds-css')">Click me for CSS code</button>
+            <div class="code-example-div" id="backgrounds-css">
+                <pre>
+                    .body-color-light {
+                        background-color: rgb(241, 237, 237);
+                    }
+                    .body-color-dark {
+                        background-color: rgb(168, 164, 164);
+                    }
+                    .menu-color {
+                        background-color: white;
+                    }
+                    .borders-general {
+                        border: 3px solid rgb(18, 18, 18);
+                    }
+                </pre>
+            </div><br><br>
 
             <h3>Color combinations</h3>
             <p>Primarily accessibility reasons requires the following color combinations to be used: </p>
@@ -140,8 +203,25 @@
                     <li id="dark-yellow-mix">Dark background - yellow text</li>
                     <li id="light-red-mix">Light background - red text</li>
                 </ul>
-            </div>
+            </div><br>
 
+            <button class="positive-btn" onclick="openCodeView('color-mix-css')">Click me for CSS code</button>
+            <div class="code-example-div" id="color-mix-css">
+                <pre>
+                    #light-black-mix {
+                        background-color: rgb(241, 237, 237);
+                        color: rgb(50, 50, 50);
+                    }
+                    #dark-yellow-mix {
+                        background-color: rgb(168, 164, 164);
+                        color: rgb(251, 250, 157);
+                    }
+                    #light-red-mix {
+                        background-color: rgb(241, 237, 237);
+                        color: rgb(141, 25, 25);
+                    }
+                </pre>
+            </div><br><br>
         </div>
 
         <div class="topics" id="color-variation-div">
@@ -162,6 +242,41 @@
             <span class="dot" id="lighter-red"></span>
             <span class="dot" id="standard-red"></span>
             <span class="dot" id="darker-red"></span>
+            <br><br>
+
+            <button class="positive-btn" onclick="openCodeView('color-css')">Click me for CSS code</button>
+            <div class="code-example-div" id="color-css">
+                <pre>
+                    #lighter-black {
+                        background-color: rgb(72, 72, 72);
+                    }
+                    #standard-black {
+                        background-color: rgb(50, 50, 50);
+                    }
+                    #darker-black {
+                        background-color: rgb(16, 16, 16);
+                    }
+                    #lighter-yellow {
+                        background-color: rgb(254, 253, 194);
+                    }
+                    #standard-yellow {
+                        background-color: rgb(251, 250, 157);
+                    }
+                    #darker-yellow {
+                        background-color: rgb(235, 232, 76);
+                    }
+                    #lighter-red {
+                        background-color: rgb(210, 81, 81);
+                    }
+                    #standard-red {
+                        background-color: rgb(141, 25, 25);
+                    }
+                    #darker-red {
+                        background-color: rgb(107, 13, 13);
+                    }
+                </pre>
+            </div><br>
+
         </div>
 
     </section>
@@ -171,6 +286,8 @@
     <footer class="borders-general">
         <p class="emphasized">For styles & colors for specific components, see under the Component section</p>
     </footer>
+
+    <script src="index.js"></script>
 </body>
 
 </html>
