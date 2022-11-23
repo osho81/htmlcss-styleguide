@@ -46,6 +46,7 @@
                     <a href="#panels-subdiv">Panels</a>
                 </div>
 
+                <a href="#forms-div">Loader</a>
                 <a href="#loader-div">Loader</a>
             </div>
         </div>
@@ -325,7 +326,8 @@
             </div>
             <br><br>
 
-            <p class="small-text emphasized">Click on any buttons to see its panel type (then click x to close the panel)</p>
+            <p class="small-text emphasized">Click on any buttons to see its panel type (then click x to close the
+                panel)</p>
 
 
         </div>
@@ -349,13 +351,42 @@
 
         <hr>
 
-        <div class="topics" id="form-div">
+        <div class="topics" id="forms-div">
             <h2>Forms</h2>
-            <p>Forms for inputs and selections should follow this section.</p><br>
+            <p>Forms for inputs and selections should follow this section. General form rules:</p>
+            <ul>
+                <li>Form labels is small & semibiold</li>
+                <li>Input field and areas are empty</li>
+                <li>Form input fields follows parent section width</li>
+                <li>Form selection fields follows half of the parent section width</li>
+                <li>Checkboxes should come before its label, so the check is evident</li>
+                <li>Be sure to require only necessary fields, and do not unecessary information</li>
+                <li>Submit buttons follows the functional button style, but takes up full form-width</li>
+            </ul><br>
 
-
-            <h3 id="panels-subdiv">Forms </h3>
-            <p></p>
+            <h3>Registration form example</h3>
+            <form id="submit-form">
+                <label for="fname" class="small-text semibold-weight">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname" class="small-text semibold-weight">Last name:</label><br>
+                <input type="text" id="ename" name="lname"><br>
+                <label for="email" class="small-text semibold-weight">Email:</label><br>
+                <input type="text" id="email" name="email"><br>
+                <label for="birthday" class="small-text semibold-weight">Birthday:</label><br>
+                <input id="birthday" type="date" name="birthday"><br>
+                <label for="language" class="small-text semibold-weight">Language:</label><br>
+                <select id="language" name="language" class="small-text">
+                    <option value="arabic" selected>Arabic</option>
+                    <option value="Chinese">Chinese</option>
+                    <option value="English">English</option>
+                    <option value="Swedish">Swedish</option>
+                </select><br>
+                <input type="checkbox" id="student" name="student">
+                <label for="return" id="student-question" class="small-text semibold-weight">Student?</label><br>
+                <input type="submit" value="Submit" id="submit-btn">
+            </form>
+            <br>
+            
 
 
         </div>
