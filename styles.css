@@ -241,7 +241,7 @@ td {
     text-align: center;
     padding: 5px 10px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 .dot {
@@ -283,6 +283,22 @@ td {
     display: inline-block;
 }
 
+.positive-btn {
+    background-color: rgb(208, 249, 224);
+    border: 2px solid rgb(50, 50, 50);
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Helvetica, sans-serif;
+    color: rgb(50, 50, 50);
+    font-size: 12px;
+    font-weight: 600;
+    margin: 5px;
+    padding: 7px 7px;
+    width: 80px;
+    text-align: center;
+    display: inline-block;
+}
+
 .negative-btn {
     background-color: rgb(249, 114, 114);
     border: 2px solid rgb(50, 50, 50);
@@ -299,21 +315,6 @@ td {
     display: inline-block;
 }
 
-.positive-btn {
-    background-color: rgb(208, 249, 224);
-    border: 2px solid rgb(50, 50, 50);
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: Helvetica, sans-serif;
-    color: rgb(50, 50, 50);
-    font-size: 12px;
-    font-weight: 600;
-    margin: 5px;
-    padding: 7px 7px;
-    width: 80px;
-    text-align: center;
-    display: inline-block;
-}
 
 .alert {
     padding: 25px;
@@ -423,6 +424,7 @@ td {
 
 .load-group {
     display: inline-block;
+    margin-left: 20px;
 }
 
 .loadspinner {
@@ -483,7 +485,7 @@ input {
 
 select {
     color: rgb(50, 50, 50);
-    margin-top: 0;
+    margin-top: 5px;
     margin-bottom: 2px;
     color: black;
     width: 350px;
