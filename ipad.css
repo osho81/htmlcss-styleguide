@@ -1,0 +1,225 @@
+/* CSS styles for mobile screen; max-width 500px;
+ * In Google chrome webdev tools, iphone 12 pro is selected for this project 
+ */
+
+body {
+    background-color: rgb(218, 246, 255);
+    padding-left: 0;
+}
+
+hr {
+    width: 95vw;
+    margin-left: 0;
+    height: 10px;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+
+#main-content {
+    display: block;
+    padding: 0;
+}
+
+#upper-title {
+    margin-top: 70px;
+    text-align: center;
+}
+
+#upper-component-title {
+    margin-top: 80px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#corner-title {
+    display: none;
+}
+
+.main-menu {
+    background-color: white;
+    width: 95vw;
+    height: auto;
+    position: fixed;
+    top: 0;
+    margin-top: 0;
+    margin-left: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.main-menu a {
+    font-family: Poppins, sans-serif;
+    color: rgb(50, 50, 50);
+    text-decoration: none;
+    display: inline;
+    margin: 0 2px;
+    font-size: 12px;
+    
+}
+
+.subnav {
+    margin-left: 0;
+    font-weight: 400;
+}
+
+#sub-subnav {
+    margin-left: 0;
+    font-style: normal !important;
+    display: none;
+}
+
+#subnav-icon {
+    font-size: 12px;
+    margin-left: 2px;
+}
+
+.topics {
+    font-family: Helvetica, sans-serif;
+    color: rgb(50, 50, 50);
+    text-align: justify;
+    width: 95vw;
+    margin: 25px 0;
+    padding: 0 3vw 0 2px;
+}
+
+img.topics {
+    width: 95vw;
+    margin: -25px 0 50px 0;
+    border: 1px solid rgb(18, 18, 18);
+    border-radius: 5%;
+    padding: 0;
+}
+
+.code-example-div {
+    font-size: 10px;
+}
+
+.white-div {
+    background-color: white;
+    width: 95vw;
+    padding: 2vw 2vw;
+    margin: 0 0 0 -2vw;
+}
+
+pre {
+    margin-left: -80px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+p {
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+li {
+    font-family: Helvetica, sans-serif;
+    font-size: 10px;
+    padding: 1px;
+}
+
+
+.multiple-col-table {
+    width: 95vw;
+    border: 1px solid rgb(50, 50, 50);
+    border-collapse: collapse;
+    font-size: smaller;
+    font-weight: 400 !important;
+}
+
+.multiple-col-table th,
+.multiple-col-table td {
+    padding: 2px;
+    border: 1px solid rgb(50, 50, 50);
+}
+
+.multiple-col-table tr:nth-child(even) {
+    background-color: #D6EEEE;
+}
+
+#horizontal-menu-example a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 5px 5px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.dot {
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.positive-btn {
+    border: 1px solid rgb(50, 50, 50);
+    font-size: 10px;
+    font-weight: 600;
+    margin: 3px;
+    padding: 5px 1px;
+    width: 60px;
+}
+
+.negative-btn {
+    border: 1px solid rgb(50, 50, 50);
+    font-size: 10px;
+    font-weight: 600;
+    margin: 3px;
+    padding: 5px 1px;
+    width: 60px;
+}
+
+label, input, select {
+    font-family: Helvetica, sans-serif;
+    margin: 3px 0;
+}
+
+input {
+    width: 90vw;
+}
+
+select {
+    margin-top: 2px;
+    width: 45vw;
+    padding: 2px;
+}
+
+#submit-btn {
+    padding: 5px;
+    border: 2px solid rgb(18, 18, 18);
+}
+
+footer {
+    font-family: Poppins, sans-serif;
+    background-color: white;
+    width: 95vw;
+    margin-left: 0;
+    text-align: center;
+}
+
+#contact-footer {
+    margin-top: 50px;
+}
