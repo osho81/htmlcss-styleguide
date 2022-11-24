@@ -24,7 +24,7 @@
             <a href="./general.html">General design</a>
             <a href="./components.html">Components</a>
             <div class="subnav small-text emphasized">
-                <a href="#buttons-div">Button styles</a>
+                <a href="#buttons-div">Buttons</a>
                 <a href="#tables-div">Tables</a>
                 <a href="#navigation-div">Navigation</a>
 
@@ -36,13 +36,13 @@
                     <a href="#panels-subdiv">Panels</a>
                 </div>
 
-                <a href="#forms-div">Loader</a>
                 <a href="#loader-div">Loader</a>
+                <a href="#forms-div">Forms</a>
             </div>
         </div>
 
         <div class="topics" id="intro-component-div">
-            <h1>Component guides for recurrent elements </h1>
+            <h1 id="upper-component-title">Component guides for recurring elements </h1>
             <p>This guideline should be used for all the following components. A components is normally composed of an
                 html element and css styling.</p>
         </div>
@@ -97,12 +97,13 @@
             <button class="positive-btn" onclick="openCodeView('button-css')">Click me for CSS code</button>
     
             <div class="code-example-div" id="button-html">
-                    <pre>
-                        &lt;button class="standard-btn"&gt;Previous&lt;/button&gt;
-                        &lt;button class="functional-btn"&gt;&lt;i class="fa-solid fa-download"&gt;&lt;/i&gt; Download&lt;/button&gt;
-                        &lt;button class="positive-btn"&gt;OK&lt;/button&gt;
-                        &lt;button class="negative-btn"&gt;Cancel&lt;/button&gt;
-                    </pre>
+                <pre>
+                    &lt;button class="standard-btn"&gt;Previous&lt;/button&gt;
+                    &lt;button class="functional-btn"&gt;
+                        &lt;i class="fa-solid fa-download"&gt;&lt;/i&gt; Download&lt;/button&gt;
+                    &lt;button class="positive-btn"&gt;OK&lt;/button&gt;
+                    &lt;button class="negative-btn"&gt;Cancel&lt;/button&gt;        
+                </pre>
             </div>
     
             <div class="code-example-div" id="button-css">
@@ -362,7 +363,8 @@
 
             <div class="code-example-div" id="menu-html">
                 <pre>
-                    &lt;div id="vertical-menu-example" class="borders-general semibold-weight"&gt;
+                    &lt;div id="vertical-menu-example" 
+                        class="borders-general semibold-weight"&gt;
                         &lt;a href="#navigation-div"&gt;Home&lt;/a&gt;
                         &lt;a href="#navigation-div"&gt;About us&lt;/a&gt;
                         &lt;div class="subnav small-text emphasized"&gt;
@@ -466,19 +468,23 @@
                 <pre>
                     &lt;div class="alert success"&gt;
                         &lt;span class="closing-x"&gt;&times;&lt;/span&gt;
-                        &lt;strong&gt;Success:&lt;/strong&gt; regards a successful positive action
+                        &lt;strong&gt;Success:&lt;/strong&gt; 
+                        regards a successful positive action
                     &lt;/div&gt;
                     &lt;div class="alert neutral"&gt;
                         &lt;span class="closing-x"&gt;&times;&lt;/span&gt;
-                        &lt;strong&gt;Info:&lt;/strong&gt; regards a neutral action or change
+                        &lt;strong&gt;Info:&lt;/strong&gt; 
+                        regards a neutral action or change
                     &lt;/div&gt;
                     &lt;div class="alert warning"&gt;
                         &lt;span class="closing-x"&gt;&times;&lt;/span&gt;
-                        &lt;strong&gt;Warning:&lt;/strong&gt; informs on a risk with negative effects
+                        &lt;strong&gt;Warning:&lt;/strong&gt; 
+                        informs on a risk with negative effects
                     &lt;/div&gt;
                     &lt;div class="alert danger"&gt;
                         &lt;span class="closing-x"&gt;&times;&lt;/span&gt;
-                        &lt;strong&gt;Danger:&lt;/strong&gt; regards a potentially dangerous and risky action
+                        &lt;strong&gt;Danger:&lt;/strong&gt; 
+                        regards a potentially dangerous and risky action
                     &lt;/div&gt;
                 </pre>
             </div>
@@ -516,7 +522,7 @@
                         background-color: rgb(241, 76, 76);
                     } 
                 </pre>
-            </div><br>
+            </div><br><br>
 
             <h3 id="panels-subdiv">Panels</h3>
             <p>Panels are information of more general or optional nature, that can contain positive, neutral or
@@ -548,22 +554,31 @@
 
             <div class="code-example-div" id="panel-html">
                 <pre>
-                    &lt;button id="positive-panel-btn" class="open-panel-btn positive-btn"&gt;Open positive sidepanel&lt;/button&gt;
-                    &lt;button id="neutral-panel-btn" class="open-panel-btn standard-btn"&gt;Open neutral sidepanel&lt;/button&gt;
-                    &lt;button id="negative-panel-btn" class="open-panel-btn negative-btn"&gt;Open negative sidepanel&lt;/button&gt;
-        
-                    &lt;div id="positive-panel" class="sidepanel large-text semibold-weight"&gt;
-                        &lt;span class="closing-panel-x"&gt;&times;&lt;/span&gt;
-                        &lt;p&gt;I am a sidepanel to inform about positive matters&lt;/p&gt;
-                    &lt;/div&gt;
-                    &lt;div id="neutral-panel" class="sidepanel large-text semibold-weight"&gt;
-                        &lt;span class="closing-panel-x"&gt;&times;&lt;/span&gt;
-                        &lt;p&gt;I am a sidepanel to inform about neutral matters&lt;/p&gt;
-                    &lt;/div&gt;
-                    &lt;div id="negative-panel" class="sidepanel large-text semibold-weight"&gt;
-                        &lt;span class="closing-panel-x"&gt;&times;&lt;/span&gt;
-                        &lt;p&gt;I am a sidepanel to inform about negative matters&lt;/p&gt;
-                    &lt;/div&gt;
+                &lt;button id="positive-panel-btn" 
+                    class="open-panel-btn positive-btn"&gt;
+                    Open positive sidepanel&lt;/button&gt;
+                &lt;button id="neutral-panel-btn" 
+                    class="open-panel-btn standard-btn"&gt;
+                    Open neutral sidepanel&lt;/button&gt;
+                &lt;button id="negative-panel-btn" 
+                    class="open-panel-btn negative-btn"&gt;
+                    Open negative sidepanel&lt;/button&gt;
+    
+                &lt;div id="positive-panel" 
+                    class="sidepanel large-text semibold-weight"&gt;
+                    &lt;span class="closing-panel-x"&gt;&times;&lt;/span&gt;
+                    &lt;p&gt;I am a sidepanel to inform about positive matters&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div id="neutral-panel" 
+                    class="sidepanel large-text semibold-weight"&gt;
+                    &lt;span class="closing-panel-x"&gt;&times;&lt;/span&gt;
+                    &lt;p&gt;I am a sidepanel to inform about neutral matters&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div id="negative-panel"
+                     class="sidepanel large-text semibold-weight"&gt;
+                    &lt;span class="closing-panel-x"&gt;&times;&lt;/span&gt;
+                    &lt;p&gt;I am a sidepanel to inform about negative matters&lt;/p&gt;
+                &lt;/div&gt;    
                 </pre>
             </div>
 
@@ -622,12 +637,12 @@
 
             <div class="code-example-div" id="loader-html">
                 <pre>
-                    &lt;div class="loadspinner load-group"&gt;&lt;/div&gt;
-                    &lt;span class="load-span load-group small-text semibold-weight"&gt;
-                        &lt;span class="blinking-dot"&gt;Lo&lt;/span&gt;
-                        &lt;span class="blinking-dot"&gt;ad&lt;/span&gt;
-                        &lt;span class="blinking-dot"&gt;ing&lt;/span&gt;
-                    &lt;/span&gt;
+                &lt;div class="loadspinner load-group"&gt;&lt;/div&gt;
+                &lt;span class="load-span load-group small-text semibold-weight"&gt;
+                    &lt;span class="blinking-dot"&gt;Lo&lt;/span&gt;
+                    &lt;span class="blinking-dot"&gt;ad&lt;/span&gt;
+                    &lt;span class="blinking-dot"&gt;ing&lt;/span&gt;
+                &lt;/span&gt;
                 </pre>
             </div>
 
@@ -719,26 +734,33 @@
 
             <div class="code-example-div" id="form-html">
                 <pre>
-                    &lt;form id="submit-form"&gt;
-                            &lt;label for="fname" class="small-text semibold-weight"&gt;First name:&lt;/label&gt;&lt;br&gt;
-                            &lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt;
-                            &lt;label for="lname" class="small-text semibold-weight"&gt;Last name:&lt;/label&gt;&lt;br&gt;
-                            &lt;input type="text" id="ename" name="lname"&gt;&lt;br&gt;
-                            &lt;label for="email" class="small-text semibold-weight"&gt;Email:&lt;/label&gt;&lt;br&gt;
-                            &lt;input type="text" id="email" name="email"&gt;&lt;br&gt;
-                            &lt;label for="birthday" class="small-text semibold-weight"&gt;Birthday:&lt;/label&gt;&lt;br&gt;
-                            &lt;input id="birthday" type="date" name="birthday"&gt;&lt;br&gt;
-                            &lt;label for="language" class="small-text semibold-weight"&gt;Language:&lt;/label&gt;&lt;br&gt;
-                            &lt;select id="language" name="language" class="small-text"&gt;
-                                &lt;option value="arabic" selected&gt;Arabic&lt;/option&gt;
-                                &lt;option value="Chinese"&gt;Chinese&lt;/option&gt;
-                                &lt;option value="English"&gt;English&lt;/option&gt;
-                                &lt;option value="Swedish"&gt;Swedish&lt;/option&gt;
-                            &lt;/select&gt;&lt;br&gt;
-                            &lt;input type="checkbox" id="student" name="student"&gt;
-                            &lt;label for="return" id="student-question" class="small-text semibold-weight"&gt;Student?&lt;/label&gt;&lt;br&gt;
-                            &lt;input type="submit" value="Submit" id="submit-btn"&gt;
-                        &lt;/form&gt;
+                &lt;form id="submit-form"&gt;
+                    &lt;label for="fname" class="small-text semibold-weight"&gt;
+                        First name:&lt;/label&gt;&lt;br&gt;
+                    &lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt;
+                    &lt;label for="lname" class="small-text semibold-weight"&gt;
+                        Last name:&lt;/label&gt;&lt;br&gt;
+                    &lt;input type="text" id="ename" name="lname"&gt;&lt;br&gt;
+                    &lt;label for="email" class="small-text semibold-weight"&gt;
+                        Email:&lt;/label&gt;&lt;br&gt;
+                    &lt;input type="text" id="email" name="email"&gt;&lt;br&gt;
+                    &lt;label for="birthday" class="small-text semibold-weight"&gt;
+                        Birthday:&lt;/label&gt;&lt;br&gt;
+                    &lt;input id="birthday" type="date" name="birthday"&gt;&lt;br&gt;
+                    &lt;label for="language" class="small-text semibold-weight"&gt;
+                        Language:&lt;/label&gt;&lt;br&gt;
+                    &lt;select id="language" name="language" class="small-text"&gt;
+                        &lt;option value="arabic" selected&gt;Arabic&lt;/option&gt;
+                        &lt;option value="Chinese"&gt;Chinese&lt;/option&gt;
+                        &lt;option value="English"&gt;English&lt;/option&gt;
+                        &lt;option value="Swedish"&gt;Swedish&lt;/option&gt;
+                    &lt;/select&gt;&lt;br&gt;
+                    &lt;input type="checkbox" id="student" name="student"&gt;
+                    &lt;label for="return" id="student-question" 
+                        class="small-text semibold-weight"&gt;
+                        Student?&lt;/label&gt;&lt;br&gt;
+                    &lt;input type="submit" value="Submit" id="submit-btn"&gt;
+                &lt;/form&gt;
                 </pre>
             </div>
 
