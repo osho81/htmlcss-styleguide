@@ -365,6 +365,11 @@ td {
     text-align: center;
 }
 
+.sidepanel p {
+    font-size: 22px;
+}
+
+
 #positive-panel {
     background-color: rgb(208, 249, 224);
 }

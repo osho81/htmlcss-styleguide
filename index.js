@@ -53,22 +53,22 @@ for (i = 0; i < closingArray.length; i++) {
 // Functions for opening a certain panel
 waitForLoad("positive-panel-btn", function () {
     document.getElementById("positive-panel-btn").onclick = function () {
-        document.getElementById("positive-panel").style.height = "200px";
-        document.getElementById("positive-panel").style.width = "400px";
+        document.getElementById("positive-panel").style.height = "20vw";
+        document.getElementById("positive-panel").style.width = "40vw";
         document.getElementById("positive-panel").style.padding = "25px";
     }
 });
 waitForLoad("neutral-panel-btn", function () {
     document.getElementById("neutral-panel-btn").onclick = function () {
-        document.getElementById("neutral-panel").style.height = "200px";
-        document.getElementById("neutral-panel").style.width = "400px";
+        document.getElementById("neutral-panel").style.height = "20vw";
+        document.getElementById("neutral-panel").style.width = "40vw";
         document.getElementById("neutral-panel").style.padding = "25px";
     }
 });
 waitForLoad("negative-panel-btn", function () {
     document.getElementById("negative-panel-btn").onclick = function () {
-        document.getElementById("negative-panel").style.height = "200px";
-        document.getElementById("negative-panel").style.width = "400px";
+        document.getElementById("negative-panel").style.height = "20vw";
+        document.getElementById("negative-panel").style.width = "40vw";
         document.getElementById("negative-panel").style.padding = "25px";
     }
 });
