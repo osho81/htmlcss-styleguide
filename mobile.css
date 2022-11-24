@@ -3,7 +3,6 @@
  */
 
 body {
-    background-color: rgb(218, 246, 255);
     padding-left: 0;
 }
 
@@ -223,5 +222,5 @@ footer {
 }
 
 #contact-footer {
-    margin-top: 50px;
+    margin-top: 70px;
 }

@@ -75,7 +75,7 @@ img.topics {
 .code-example-div {
     display: none;
     background-color: white;
-    font-size: 10px;
+    font-size: 13px;
     text-align: left;
     padding: 5px;
     border: 1px solid rgb(18, 18, 18);
@@ -474,7 +474,9 @@ td {
     }
 }
 
-label, input, select {
+label,
+input,
+select {
     font-family: Helvetica, sans-serif;
     margin: 5px 0;
 }
@@ -497,7 +499,8 @@ select {
     padding: 2px;
 }
 
-#student, #student-question {
+#student,
+#student-question {
     color: rgb(50, 50, 50);
     margin: 10px 5px;
     width: auto;
@@ -518,4 +521,231 @@ footer {
     margin-left: 350px;
     margin-top: 50px;
     text-align: center;
+}
+
+/* --------------------------------------------------------------------------------- */
+
+/* Adjustment for when a screens is smaller screen area, which will cover 
+ * e.g. if user use mouse to make desktop screen smaller,
+ * larger ipads that are note covered by the separate css files,
+ * for rotated mobile/tablet screens,
+ * (See mobile and tablet device in their respective separate css files) */
+
+@media only screen and (max-width: 1200px) {
+    body {
+        padding-left: 0;
+    }
+    
+    hr {
+        width: 95vw;
+        margin-left: 0;
+        height: 15px;
+        box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+    }
+    
+    #main-content {
+        display: block;
+        padding: 0;
+    }
+    
+    #upper-title {
+        margin-top: 80px;
+        text-align: center;
+    }
+    
+    #upper-component-title {
+        margin-top: 100px;
+        text-align: center;
+    }
+    
+    #corner-title {
+        display: none;
+    }
+    
+    .main-menu {
+        background-color: white;
+        width: 95vw;
+        height: auto;
+        position: fixed;
+        top: 0;
+        margin-top: 0;
+        margin-left: 0;
+        padding: 5px 0;
+        text-align: center;
+    }
+    
+    .main-menu a {
+        font-family: Poppins, sans-serif;
+        color: rgb(50, 50, 50);
+        text-decoration: none;
+        display: inline;
+        margin: 0 2px;
+        font-size: 14px;
+        
+    }
+    
+    .subnav {
+        margin-left: 0;
+        font-weight: 400;
+    }
+    
+    #sub-subnav {
+        margin-left: 0;
+        font-style: normal !important;
+        display: none;
+    }
+    
+    #subnav-icon {
+        font-size: 12px;
+        margin-left: 2px;
+    }
+    
+    .topics {
+        font-family: Helvetica, sans-serif;
+        color: rgb(50, 50, 50);
+        text-align: justify;
+        width: 95vw;
+        margin: 50px 0;
+        padding: 0 3vw 0 2px;
+    }
+    
+    img.topics {
+        width: 95vw;
+        margin: -25px 0 50px 0;
+        border: 1px solid rgb(18, 18, 18);
+        border-radius: 5%;
+        padding: 0;
+    }
+    
+    .code-example-div {
+        font-size: 12px;
+    }
+    
+    .white-div {
+        background-color: white;
+        width: 95vw;
+        padding: 2vw 2vw;
+        margin: 0 0 0 -2vw;
+    }
+    
+    pre {
+        margin-left: -20px;
+    }
+    
+    h1 {
+        font-size: 25px;
+    }
+    
+    h2 {
+        font-size: 23px;
+    }
+    
+    h3 {
+        font-size: 21px;
+    }
+    
+    h4 {
+        font-size: 19px;
+    }
+    
+    p {
+        font-family: Helvetica, sans-serif;
+        font-size: 18px;
+    }
+    
+    li {
+        font-family: Helvetica, sans-serif;
+        font-size: 16px;
+        padding: 2px;
+    }
+    
+    
+    .multiple-col-table {
+        width: 95vw;
+        border: 1px solid rgb(50, 50, 50);
+        border-collapse: collapse;
+        font-size: smaller;
+        font-weight: 400 !important;
+    }
+    
+    .multiple-col-table th,
+    .multiple-col-table td {
+        padding: 2px;
+        border: 1px solid rgb(50, 50, 50);
+    }
+    
+    .multiple-col-table tr:nth-child(even) {
+        background-color: #D6EEEE;
+    }
+    
+    #horizontal-menu-example a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 5px 5px;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    
+    .dot {
+        margin: 10px;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        display: inline-block;
+    }
+    
+    .positive-btn {
+        border: 1px solid rgb(50, 50, 50);
+        font-size: 14px;
+        font-weight: 600;
+        margin: 5px;
+        padding: 7px 3px;
+        width: 80px;
+    }
+    
+    .negative-btn {
+        border: 1px solid rgb(50, 50, 50);
+        font-size: 14px;
+        font-weight: 600;
+        margin: 5px;
+        padding: 7px 3px;
+        width: 80px;
+    }
+    
+    .sidepanel p {
+        font-size: 18px;
+    }
+    
+    label, input, select {
+        font-family: Helvetica, sans-serif;
+        margin: 3px 0;
+    }
+    
+    input {
+        width: 90vw;
+    }
+    
+    select {
+        margin-top: 2px;
+        width: 45vw;
+        padding: 2px;
+    }
+    
+    #submit-btn {
+        padding: 5px;
+        border: 2px solid rgb(18, 18, 18);
+    }
+    
+    footer {
+        font-family: Poppins, sans-serif;
+        background-color: white;
+        width: 95vw;
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    #contact-footer {
+        margin-top: 50px;
+    }
 }
