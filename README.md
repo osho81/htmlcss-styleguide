@@ -4,7 +4,7 @@
 A styleguide with common html/css components. For future usage, eases copy paste of own codes and enables coherent design. 
 
 
-<img src="https://github.com/osho81/htmlcss-styleguide/blob/master/images/pic-of-styleguide.png" alt="Pic from the game" width="600"/>
+<img src="https://github.com/osho81/htmlcss-styleguide/blob/master/images/pic-of-styleguide.png" alt="Pic from the game" width="700"/>
 
 
 #### Purpose & Motivation
