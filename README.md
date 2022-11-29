@@ -9,12 +9,12 @@ A styleguide with common html/css components. For future usage, eases copy paste
 
 #### Purpose & Motivation
 This started of as part of a school assignment. 
-Main purpose is to learn imporove html and css skills. 
+Main purpose is to imporove html and css skills. 
 
 #### Used tech
 - HTML/CSS
 - Javascript for displaying component's html/css code 
-- Github pages for deployment of website
+- Github pages for published of website
 
 ##### Visit published webpage:
 https://osho81.github.io/htmlcss-styleguide/  
