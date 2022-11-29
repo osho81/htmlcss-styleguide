@@ -15,4 +15,4 @@ Main purpose is to learn imporove html and css skills.
 - Github pages for deployment of website
 
 ##### Visit styleguide webpage:
-osho81.github.io/htmlcss-styleguide/
+https://osho81.github.io/htmlcss-styleguide/ 
