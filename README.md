@@ -16,5 +16,5 @@ Main purpose is to learn imporove html and css skills.
 - Javascript for displaying component's html/css code 
 - Github pages for deployment of website
 
-##### Visit styleguide webpage:
-https://osho81.github.io/htmlcss-styleguide/ 
+##### Visit published webpage:
+https://osho81.github.io/htmlcss-styleguide/  
