@@ -22,7 +22,7 @@ waitForLoad("refresh-page", function () {
     }
 });
 
-// If Information link is clicked, open or close its sub-links
+// If Information nav link is clicked, open or close its sub-links
 waitForLoad("info-subnav", function () {
     document.getElementById("info-subnav").onclick = function () {
         if (document.getElementById("sub-subnav").style.display == "block") {
@@ -35,16 +35,20 @@ waitForLoad("info-subnav", function () {
     }
 });
 
+// Function for closing message alerts
+var closingArray = document.getElementsByClassName("closing-x"); // returns all elements with this class
+var i;
 
-// TESTING FUCNTION BY CLASS WITH JQUERY 221215
-waitForLoad("closing-x", function () {
-    $(document).ready(function () {
+for (i = 0; i < closingArray.length; i++) {
+    // Close parent message of the returned array 
+    closingArray[i].onclick = function () {
+        var div = this.parentElement;
+        div.style.opacity = "0";
 
-        $(".closing-x").on("click", function () {
-            console.log("Yes!");
-        })
-    });
-});
+        // Fade out when shutting it down, and remove from display
+        setTimeout(function () { div.style.display = "none"; }, 300);
+    }
+}
 
 // Functions for opening a certain panel
 waitForLoad("positive-panel-btn", function () {
