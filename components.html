@@ -91,7 +91,8 @@
             <button class="negative-btn">Decline</button>
             <button class="negative-btn">No</button>
             <br><br>
-            <p class="semibold-weight emphasized small-text">For hovering animation, choose same color but lighter, and increment border-width and font-size with 1px and font-width with 100; see example on negative buttons</p><br>
+            <p class="semibold-weight emphasized small-text">
+                For hovering: decrease opacity to 0.5; decrease border-width with 1px; see example on negative buttons</p><br>
             <br>
 
             <!-- Code for displaying html/css code as plain and copiable text -->
@@ -170,10 +171,8 @@
                         display: inline-block;
                     }
                     .negative-btn:hover {
-                        background-color: rgb(252, 151, 151);
-                        border: 3px solid rgb(50, 50, 50);
-                        font-size: 13px;
-                        font-weight: 700;
+                        opacity: 0.5;
+                        border: 1px solid rgb(50, 50, 50);
                     }
                 </pre>
             </div><br>
