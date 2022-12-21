@@ -315,6 +315,13 @@ td {
     display: inline-block;
 }
 
+.negative-btn:hover {
+    background-color: rgb(252, 151, 151);
+    border: 3px solid rgb(50, 50, 50);
+    font-size: 13px;
+    font-weight: 700;
+}
+
 
 .alert {
     padding: 25px;

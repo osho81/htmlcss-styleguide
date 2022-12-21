@@ -90,7 +90,9 @@
             <button class="negative-btn">Delete</button>
             <button class="negative-btn">Decline</button>
             <button class="negative-btn">No</button>
-            <br><br><br>
+            <br><br>
+            <p class="semibold-weight emphasized small-text">For hovering animation, choose same color but lighter, and increment border-width and font-size with 1px and font-width with 100; see example on negative buttons</p><br>
+            <br>
 
             <!-- Code for displaying html/css code as plain and copiable text -->
             <button class="positive-btn" onclick="openCodeView('button-html')">Click me for HTML code</button>
@@ -166,6 +168,12 @@
                         width: 80px;
                         text-align: center;
                         display: inline-block;
+                    }
+                    .negative-btn:hover {
+                        background-color: rgb(252, 151, 151);
+                        border: 3px solid rgb(50, 50, 50);
+                        font-size: 13px;
+                        font-weight: 700;
                     }
                 </pre>
             </div><br>
@@ -711,7 +719,8 @@
                 <li>Checkboxes should come before its label, so the check is evident</li>
                 <li>Be sure to require only necessary fields, and do not unecessary information</li>
                 <li>Submit buttons follows the functional button style, but takes up full form-width</li>
-            </ul><br>
+            </ul>
+            <p class="semibold-weight emphasized small-text">Coloring form labels are allowed, but should be aligned with table colors (see Tables sections)</p><br>
 
             <h3>Registration form example</h3>
             <form id="submit-form">
@@ -734,7 +743,7 @@
                 <label for="return" id="student-question" class="small-text semibold-weight">Student?</label><br>
                 <input type="submit" value="Submit" id="submit-btn">
             </form>
-            <br>
+            <br><br>
 
             <!-- Code for displaying html/css code as plain and copiable text -->
             <button class="positive-btn" onclick="openCodeView('form-html')">Click me for HTML code</button>
