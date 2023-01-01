@@ -434,6 +434,17 @@ td {
     background-color: rgb(107, 13, 13);
 }
 
+#background-grey-dark {
+    background-color: rgb(219, 213, 213) !important;
+    border: 1px solid black;
+}
+
+#background-grey-light {
+    background-color: rgb(241, 237, 237) !important;
+    border: 1px solid black;
+}
+
+
 .load-group {
     display: inline-block;
     margin-left: 20px;
